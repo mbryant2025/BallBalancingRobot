@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mbrya\Desktop\BallBalancingRobot\build\CMakeFiles\76d35d9fcbbaf43319cc4160e82d96fa\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{636F53C2-CCAA-3BF0-A87E-42216D1F699B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

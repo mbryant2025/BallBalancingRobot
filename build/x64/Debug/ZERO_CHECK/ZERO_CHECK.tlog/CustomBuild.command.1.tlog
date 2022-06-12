@@ -1,0 +1,10 @@
+^C:\USERS\MBRYA\DESKTOP\BALLBALANCINGROBOT\BUILD\CMAKEFILES\76D35D9FCBBAF43319CC4160E82D96FA\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/mbrya/Desktop/BallBalancingRobot -BC:/Users/mbrya/Desktop/BallBalancingRobot/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/mbrya/Desktop/BallBalancingRobot/build/BallBalancingRobot.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
