@@ -6,9 +6,17 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="C:\Users\mbrya\Desktop\BallBalancingRobot\SerialPort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
     <CustomBuild Include="C:\Users\mbrya\Desktop\BallBalancingRobot\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{A201CA20-A1A3-3D6A-9D32-F94FDCFD1A13}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{539D1E88-9C19-3C09-9BC5-58CC25713985}</UniqueIdentifier>
     </Filter>

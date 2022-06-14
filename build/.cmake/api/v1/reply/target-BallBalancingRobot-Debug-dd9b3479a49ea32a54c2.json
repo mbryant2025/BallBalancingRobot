@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Release/BallBalancingRobot.exe"
+			"path" : "Debug/BallBalancingRobot.exe"
 		},
 		{
-			"path" : "Release/BallBalancingRobot.pdb"
+			"path" : "Debug/BallBalancingRobot.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -29,13 +29,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 10,
+				"line" : 12,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 12,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 10,
 				"parent" : 0
 			},
 			{
@@ -52,13 +58,17 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 3,
+					"path" : "C:/Users/mbrya/Desktop/BallBalancingRobot"
+				},
+				{
+					"backtrace" : 4,
 					"isSystem" : true,
 					"path" : "C:/Users/mbrya/Documents/opencv/build/include"
 				}
@@ -82,91 +92,91 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG",
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "/machine:x64 /INCREMENTAL:NO /subsystem:console",
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
 				"role" : "flags"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460.lib",
+				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460d.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460.lib",
+				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460d.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460.lib",
+				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460d.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460.lib",
+				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460d.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460.lib",
+				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460d.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460.lib",
+				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460d.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460.lib",
+				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460d.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460.lib",
+				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460d.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460.lib",
+				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460d.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460.lib",
+				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460d.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460.lib",
+				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460d.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460.lib",
+				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460d.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460.lib",
+				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460d.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460.lib",
+				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460d.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460.lib",
+				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460d.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460.lib",
+				"fragment" : "C:\\Users\\mbrya\\Documents\\opencv\\build\\x64\\vc15\\lib\\opencv_world460d.lib",
 				"role" : "libraries"
 			},
 			{
@@ -191,6 +201,13 @@
 			[
 				0
 			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1
+			]
 		}
 	],
 	"sources" : 
@@ -200,6 +217,11 @@
 			"compileGroupIndex" : 0,
 			"path" : "main.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "SerialPort.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

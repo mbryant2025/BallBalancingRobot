@@ -7,7 +7,9 @@ enable_testing()
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-add_executable(BallBalancingRobot main.cpp)
+include_directories(${PROJECT_SOURCE_DIR})
+
+add_executable(BallBalancingRobot main.cpp SerialPort.h)
 
 target_link_libraries(BallBalancingRobot ${OpenCV_LIBS})
 

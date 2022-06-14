@@ -1,4 +1,5 @@
 #include <opencv2\opencv.hpp>
+#include "SerialPort.h"
 
 using namespace cv;
 using namespace std;
@@ -11,6 +12,9 @@ Scalar orange_lower = Scalar(100, 125, 180);
 Scalar orange_upper = Scalar(255, 255, 255);
 
 VideoCapture cap(0);
+
+char *port_name = "\\\\.\\COM6";
+char incomingData[100];
 
 void initialize_camera() {
 
@@ -82,10 +86,18 @@ Vec2d image_process() {
 
 }
 
-int main()
-{
+void initialize_serial() {
+
+    SerialPort arduino(port_name);
+
+
+}
+
+int main() {
 
 initialize_camera();
+
+initialize_serial();
 
     while (true) {
 
