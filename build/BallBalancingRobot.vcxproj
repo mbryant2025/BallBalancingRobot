@@ -313,7 +313,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\Users\mbrya\Desktop\BallBalancingRobot\main.cpp" />
-    <ClInclude Include="C:\Users\mbrya\Desktop\BallBalancingRobot\SerialPort.h" />
+    <ClCompile Include="C:\Users\mbrya\Desktop\BallBalancingRobot\SerialPort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\mbrya\Desktop\BallBalancingRobot\build\ZERO_CHECK.vcxproj">

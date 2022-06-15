@@ -9,7 +9,7 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 
 include_directories(${PROJECT_SOURCE_DIR})
 
-add_executable(BallBalancingRobot main.cpp SerialPort.h)
+add_executable(BallBalancingRobot main.cpp SerialPort.cpp)
 
 target_link_libraries(BallBalancingRobot ${OpenCV_LIBS})
 
