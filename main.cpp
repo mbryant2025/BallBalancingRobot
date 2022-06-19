@@ -1,4 +1,7 @@
 #include <opencv2\opencv.hpp>
+#include <iostream>
+#include <string>
+#include <stdlib.h>
 #include "SerialPort.h"
 
 using namespace cv;
@@ -13,8 +16,9 @@ Scalar orange_upper = Scalar(255, 255, 255);
 
 VideoCapture cap(0);
 
-char *port_name = "\\\\.\\COM6";
-char incomingData[100];
+char *port_name = "COM5";
+char incomingData[MAX_DATA_LENGTH];
+char output[MAX_DATA_LENGTH];
 
 void initialize_camera() {
 
@@ -66,9 +70,9 @@ Vec2d image_process() {
 
     int x_avg, y_avg;
 
-    if(pts < 200) {
-        x_avg = 0;
-        y_avg = 0;
+    if(pts < 800) {
+        x_avg = frame_orange.rows / 2;
+        y_avg = frame_orange.cols / 2;
     } 
     else {
         x_avg = x_sum / pts;
@@ -86,25 +90,36 @@ Vec2d image_process() {
 
 }
 
-void initialize_serial() {
-
-    SerialPort arduino(port_name);
-
-
-}
 
 int main() {
 
-initialize_camera();
+    initialize_camera();
 
-initialize_serial();
+    SerialPort arduino(port_name);
 
-    while (true) {
+    if(arduino.isConnected()) {
+        cout << "Arduino connected" << endl;
+    }
+    else {
+        cout << "Arduino not connected" << endl;
+    }
 
+
+    while (arduino.isConnected()) {
         
-
         Vec2d pos = image_process();
-        
+
+        string command;
+
+        command = "X" + to_string(pos[0]) + "Y" + to_string(pos[1]) + "\n";
+
+        char* charArray = new char[32];
+        copy(command.begin(), command.end(), charArray);
+        charArray[command.size()] = '\n';
+
+        arduino.writeSerialPort(charArray, 32);
+
+        delete [] charArray;
 
     }
 

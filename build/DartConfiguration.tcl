@@ -21,13 +21,12 @@ LabelsForSubprojects:
 
 # Submission information
 SubmitURL: http://
-SubmitInactivityTimeout: 
 
 # Dashboard start time
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "C:/Program Files/CMake/bin/cmake.exe" "C:/Users/mbrya/Desktop/BallBalancingRobot"
+ConfigureCommand: "C:/Program Files (x86)/CMake/bin/cmake.exe" "C:/Users/mbrya/Desktop/BallBalancingRobot"
 MakeCommand: "C:\Program Files\CMake\bin\cmake.exe" --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
